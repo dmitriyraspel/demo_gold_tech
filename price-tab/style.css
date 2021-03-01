@@ -2137,7 +2137,7 @@ footer .social ul {
    margin-bottom: 15px;
    padding-top: 30px;
    padding-bottom: 30px;
-   box-shadow: 2px 2px 16px 2px rgb(0 0 0 / 10%);
+   box-shadow: 2px 2px 7px 1px rgb(0 0 0 / 10%);
 }
 @media (max-width: 500px) {
    .price-tab__item {
