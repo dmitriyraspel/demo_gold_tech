@@ -859,10 +859,24 @@ img, svg {
   margin-left: 0;
 }
 
+.header-right {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+	-webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+	
+}
+
 .header .header-right .tel {
   border: none;
   color: #111;
   font-weight: 700;
+  margin-right: 16px;
 }
 
 @media (max-width: 600px) {
@@ -872,7 +886,6 @@ img, svg {
 }
 
 .header .header-right .button {
-  margin-left: 20px;
   padding: 16px 20px;
   font-size: 14px;
 }
