@@ -2,14 +2,14 @@
   font-family: 'CeraPro';
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/fonts/cerapro/CeraPro-Regular.ttf);
+  src: url(https://dmitriyraspel.github.io/demo_gold_tech/goldtech-landing/assets/fonts/cerapro/CeraPro-Regular.ttf);
 }
 
 @font-face {
   font-family: 'CeraPro';
   font-style: Bold;
   font-weight: 700;
-  src: url(/assets/fonts/cerapro/CeraPro-Bold.ttf);
+  src: url(https://dmitriyraspel.github.io/demo_gold_tech/goldtech-landing/assets/fonts/cerapro/CeraPro-Bold.ttf);
 }
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -553,7 +553,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   height: 45px;
   border-radius: 50%;
   background-color: #A81111;
-  background-image: url(/assets/img/arrow-right.png);
+  background-image: url(https://dmitriyraspel.github.io/demo_gold_tech/goldtech-landing/assets/img/arrow-down.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -586,7 +586,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   position: absolute;
   width: 15px;
   height: 15px;
-  background-image: url(/assets/img/arrow-right.png);
+  background-image: url(https://dmitriyraspel.github.io/demo_gold_tech/goldtech-landing/assets/img/arrow-right.png);
   background-repeat: no-repeat;
   background-position: center;
   right: 10px;
@@ -1062,7 +1062,7 @@ img, svg {
   left: 50%;
   width: 40px;
   height: 55px;
-  background-image: url(/assets/img/wheel-arrow.svg);
+  background-image: url(https://dmitriyraspel.github.io/demo_gold_tech/goldtech-landing/assets/img/wheel-arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
@@ -1591,7 +1591,7 @@ img, svg {
   position: absolute;
   width: 15px;
   height: 15px;
-  background-image: url(/assets/img/arrow-down.png);
+  background-image: url(https://dmitriyraspel.github.io/demo_gold_tech/goldtech-landing/assets/img/arrow-down.png);
   background-repeat: no-repeat;
   background-position: center;
   right: 0;
