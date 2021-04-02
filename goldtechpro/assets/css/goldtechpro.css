@@ -19,7 +19,6 @@ html {
  */
 body {
   margin: 0;
-  border: 1px solid red;
 }
 
 /**
@@ -971,6 +970,10 @@ img, svg {
   top: 18%;
   right: -40%;
   height: auto;
+}
+
+.section-3 .section-3__image-background-center svg {
+  fill: red;
 }
 
 .section-3 .section-3__inner {
