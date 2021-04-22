@@ -1,0 +1,51 @@
+// Colors
+$primary: #A81111;
+$gold: #c19e6d;
+$primary-dark: darken($primary,8%);
+$text: #333;
+$text-dark: #111;
+$background: #ffffff;
+$background-alt: #f7f7f7;
+$background-dark: #242633;
+$line: #eee;
+$error: tomato;
+
+// Typography
+$font: 'Roboto', sans-serif; // 100+400+700
+// $font: CeraPro;
+// $font: 'Literata', serif;
+$font-size: 16px;
+$line-height: 1.15;
+$light: 100;
+$normal: 400;
+$bold: 700;
+
+// Other variables
+$radius: 30px;
+
+// Containers
+$containerWidth: 90%; // Percentage of screen width
+$containerMax: 1100px; // Largest fixed width
+$text-container: 640px; // Limit texts for readability
+$min-container: 800px;
+
+// Media queries
+$tablet-width: 600px !default; // Tablets
+$desktop-width: 1023px !default; // Desktops & Laptops
+$huge-width: 1400px !default; // Large Desktops
+
+
+@mixin container {
+	width: calc(100vw - 30px);
+	max-width: 1100px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+@mixin inner-flex-column {
+   height: 100%;
+   max-height: calc(100vh - 138px); //72+46
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}

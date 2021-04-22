@@ -1,0 +1,130 @@
+.section-3 {
+   background: #fff;
+   
+}
+.section-3__inner {
+   @include container;
+   // border: 1px solid red;
+}
+
+.items-wrap {
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: -15px;
+   justify-content: center;
+   position: relative;
+   
+   @media (min-width: 800px) {
+      justify-content: space-between;
+      max-width: $min-container;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+.section-3__item {
+   margin-left: 15px;
+   // margin-top: 20px;
+   width: 350px;
+   max-width: 100%;
+   
+   
+
+   h4 {
+      position: relative;
+      margin: 0;
+      padding-top: 20px;
+      font-size: 18px;
+      font-weight: $bold;
+      // font-size: 24px;
+      
+      &::before {
+         content: "";
+         position: absolute;
+         width: 60px;
+         height: 10px;
+         background-color: $gold;
+         top: 0;
+         left: 0;
+      }
+   }
+   
+}
+
+.section-3__image-background {
+   width: auto;
+   height: auto;
+   max-height: 100%;
+   max-width: 100%;
+   // margin-top: -60px;
+   // margin-bottom: 20px;
+
+   // bottom: 0;
+}
+
+@media (min-width: 800px) {
+   .section-3__image-background {
+      opacity: 0.7;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 500px;
+   }
+
+   .section-3__item {
+
+      &:nth-child(2) {
+         // margin-right: 15px;
+         order: 1;
+      }
+      &:nth-child(3) {
+         margin-top: 100px;
+         margin-bottom: -100px;
+      }
+   }
+   
+}
+
+// only mobile
+@media (max-width: $desktop-width) {
+   .section-3__inner {
+      padding-top: 20px;
+      padding-bottom: 80px;
+   }
+   .section-3__item {
+      margin-top: 20px;
+      p {
+         // font-size: 15px;
+         line-height: 1.7;
+      }
+   }
+
+}
+
+@media (min-width: $desktop-width) {
+   .section-3__inner {
+      @include inner-flex-column;
+   }
+   .items-wrap {
+      max-width: 1000px;
+   }
+   .section-3__item {
+      width: 460px;
+      max-width: 48%;
+   }
+}
+
+@media (min-width: 1300px) {
+   .items-wrap {
+      max-width: $containerMax;
+   }
+   .section-3__item {
+      width: 500px;
+   }
+}
+
+@media (min-width: $desktop-width) and (min-height: 800px) {
+   .section-3__image-background {
+      transform: translateY(50px);
+   }
+}

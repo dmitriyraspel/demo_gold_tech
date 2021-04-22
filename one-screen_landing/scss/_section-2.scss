@@ -1,0 +1,155 @@
+// section-2
+.section-2 {
+   background: $gold;
+   color: #fff;
+   
+   padding-bottom: 60px;
+}
+
+.section-2__inner {
+   // border: 1px solid red;
+   @include container;
+}
+
+.section-2__text {
+   font-weight: 100;
+   font-size: 16px;
+   margin-top: 0;
+
+   span {
+      font-weight: 400;
+   }
+}
+
+.section-2__title {
+   color: #fff;
+   position: relative;
+   padding-bottom: 1em;
+   margin-top: 1em;
+   margin-bottom: 1em;
+   font-size: 22px;
+
+   &::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 8px;
+      background: #fff;
+      bottom: 0;
+      left: 0;
+   }
+}
+
+.section-2__list {
+   margin: 20px 0 0;
+   padding: 0;
+   list-style: none;
+
+   li {
+      padding-left: 40px;
+   }
+   p {
+      position: relative;
+
+      &::before {
+         content: "";
+         position: absolute;
+         left: -18px;
+         top: 9px;
+         width: 7px;
+         height: 7px;
+         border-radius: 50%;
+         background: #fff;
+      }
+   }
+}
+
+
+@media (min-width: 600px) {
+   .section-2__title {
+      text-align: center;
+      font-size: 32px;
+      
+      &::after {
+         width: 80px;
+         height: 10px;
+         left: 50%;
+         transform: translateX(-50%);
+      }
+   }
+   .section-2__list p {
+      font-size: 16px;
+   }
+}
+
+@media (min-width: 760px) {
+
+   .section-2__text {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .section-2__list {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      columns: 2;
+
+      p {
+         font-size: 17px;
+         margin-top: 0;
+      }
+   }
+}
+
+// @media (min-width: 800px) {
+//    .section-2__text {
+//             max-width: 800px;
+//             margin: 0 auto;
+//          }
+// }
+
+
+
+// only mobile
+@media (max-width: $desktop-width) {
+   .section-2__inner {
+      padding-top: 20px;
+   }
+   .section-2__list {
+      margin-bottom: 20px;
+   }
+}
+
+
+
+@media (min-width: 999px) {
+   .section-2__list {
+      columns: 3;
+   }
+   .section-2__text,
+   .section-2__list p {
+      font-size: 18px;
+   }
+}
+
+// only pc
+@media (min-width: $desktop-width) {
+   .section-2__inner {
+      // border: 1px solid red;
+      @include inner-flex-column;
+   }
+   .section-2__title {
+      margin-bottom: 0;
+   }
+
+   .section-2__text {
+      max-width: $min-container;
+   }
+
+   .section-2__list {
+      max-width: $min-container;
+      columns: 3;
+   }
+}
