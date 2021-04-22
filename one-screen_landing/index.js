@@ -7,7 +7,7 @@ function fixNav() {
    var menuButton5 = document.querySelector('#menu__link-5');
 
    var menuLinks = document.querySelectorAll('a.menu__link');
-   // var logo = document.querySelectorAll('logo');
+   var logoLinks = document.querySelectorAll('a.logo-link');
    
    var activ = '-activ';
 
@@ -78,6 +78,18 @@ function fixNav() {
       }
    }
 
+   if (logoLinks.length > 0) {
+      logoLinks.forEach(logoLink => {
+         logoLink.addEventListener("click", returnHomePage);
+      });
+   }
+
+   function returnHomePage() {
+      if (! body.classList.contains('section-home-activ') ) {
+         removeActiv();
+         returnHomeClass();
+      }
+   }
 }
 
 fixNav();

@@ -836,6 +836,17 @@ img {
   }
 }
 
+.logo-link {
+  text-decoration: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+body.section-home-activ .logo-link {
+  cursor: default;
+}
+
 body.section-home-activ .section-home,
 body.section-1-activ .section-1,
 body.section-2-activ .section-2,
