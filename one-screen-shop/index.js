@@ -9,7 +9,7 @@ function fixNav() {
 
    var menuLinks = document.querySelectorAll('a.menu__link');
    var logoLinks = document.querySelectorAll('a.logo-link');
-   
+
    var activ = '-activ';
 
 
@@ -22,17 +22,17 @@ function fixNav() {
    function MenuLinkClick() {
       var sectionNum = this.getAttribute('aria-controls');
       var newClass = sectionNum + activ;
-      
-      if ( this.getAttribute( 'aria-expanded' ) === 'true' ) {
+
+      if (this.getAttribute('aria-expanded') === 'true') {
          removeActiv();
-         this.setAttribute( 'aria-expanded', 'false' );
-         this.classList.remove( 'active-button' );
+         this.setAttribute('aria-expanded', 'false');
+         this.classList.remove('active-button');
          returnHomeClass();
       } else {
          removeActiv();
-         this.setAttribute( 'aria-expanded', 'true' );
-         this.classList.add( 'active-button' );
-         body.classList.add(newClass); 
+         this.setAttribute('aria-expanded', 'true');
+         this.classList.add('active-button');
+         body.classList.add(newClass);
          returnHomeClass();
       }
    }
@@ -40,46 +40,45 @@ function fixNav() {
 
    function removeActiv() {
 
-      if (body.classList.contains('section-home-activ') ) {
+      if (body.classList.contains('section-home-activ')) {
          body.classList.remove('section-home-activ');
       };
-         
-      
-      if (body.classList.contains('section-1-activ') ) {
+
+      if (body.classList.contains('section-1-activ')) {
          body.classList.remove('section-1-activ');
-         menuButton1.setAttribute( 'aria-expanded', 'false' );
+         menuButton1.setAttribute('aria-expanded', 'false');
       };
-      if (body.classList.contains('section-2-activ') ) {
+      if (body.classList.contains('section-2-activ')) {
          body.classList.remove('section-2-activ');
-         menuButton2.setAttribute( 'aria-expanded', 'false' );
+         menuButton2.setAttribute('aria-expanded', 'false');
       };
-      if (body.classList.contains('section-3-activ') ) {
+      if (body.classList.contains('section-3-activ')) {
          body.classList.remove('section-3-activ');
-         menuButton3.setAttribute( 'aria-expanded', 'false' );
+         menuButton3.setAttribute('aria-expanded', 'false');
       };
-      if (body.classList.contains('section-4-activ') ) {
+      if (body.classList.contains('section-4-activ')) {
          body.classList.remove('section-4-activ');
-         menuButton4.setAttribute( 'aria-expanded', 'false' );
+         menuButton4.setAttribute('aria-expanded', 'false');
       };
-      if (body.classList.contains('section-5-activ') ) {
+      if (body.classList.contains('section-5-activ')) {
          body.classList.remove('section-5-activ');
-         menuButton5.setAttribute( 'aria-expanded', 'false' );
+         menuButton5.setAttribute('aria-expanded', 'false');
       }
 
-      if (body.classList.contains('burger-menu-open') ) {
+      if (body.classList.contains('burger-menu-open')) {
          body.classList.remove('burger-menu-open');
-         burgerButton.setAttribute( 'aria-expanded', 'false' );
+         burgerButton.setAttribute('aria-expanded', 'false');
       }
    }
 
    function returnHomeClass() {
-      if ( menuButton1.getAttribute( 'aria-expanded' ) === 'false'
-      & menuButton2.getAttribute( 'aria-expanded' ) === 'false'
-      & menuButton3.getAttribute( 'aria-expanded' ) === 'false'
-      & menuButton4.getAttribute( 'aria-expanded' ) === 'false'
-      & menuButton5.getAttribute( 'aria-expanded' ) === 'false'
+      if (body.classList.contains('home-page') &
+         menuButton1.getAttribute('aria-expanded') === 'false' &
+         menuButton2.getAttribute('aria-expanded') === 'false' &
+         menuButton3.getAttribute('aria-expanded') === 'false' &
+         menuButton4.getAttribute('aria-expanded') === 'false' &
+         menuButton5.getAttribute('aria-expanded') === 'false'
       ) {
-
          body.classList.add('section-home-activ');
       }
    }
@@ -90,8 +89,8 @@ function fixNav() {
       });
    }
 
-   function returnHomePage() {  // добавить проверку на Home Page
-      if (! body.classList.contains('section-home-activ') ) {
+   function returnHomePage() {
+      if (!body.classList.contains('section-home-activ')) {
          removeActiv();
          returnHomeClass();
       }
@@ -103,17 +102,15 @@ function burgerNav() {
    var burgerButton = document.querySelector('#burger-menu-toggle');
    var siteNavigation = document.querySelector('#burger-menu');
 
-   burgerButton.addEventListener( 'click', function() {
-		if ( burgerButton.getAttribute( 'aria-expanded' ) === 'true' ) {
+   burgerButton.addEventListener('click', function () {
+      if (burgerButton.getAttribute('aria-expanded') === 'true') {
          body.classList.remove('burger-menu-open');
-			burgerButton.setAttribute( 'aria-expanded', 'false' );
-         console.log('aria-expanded = true');
-		} else {
-			burgerButton.setAttribute( 'aria-expanded', 'true' );
-         console.log('aria-expanded = false');
+         burgerButton.setAttribute('aria-expanded', 'false');
+      } else {
+         burgerButton.setAttribute('aria-expanded', 'true');
          body.classList.add('burger-menu-open');
-		}
-	} );
+      }
+   });
 
 }
 
