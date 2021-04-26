@@ -1552,7 +1552,6 @@ body.section-5-activ .section-5 {
 }
 
 .section-home-inner {
-  border: 1px solid red;
   min-height: calc(100vh - 60px);
   width: calc(100vw - 15px);
   position: relative;
