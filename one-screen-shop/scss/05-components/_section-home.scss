@@ -1,0 +1,200 @@
+
+
+.avatar-circle-wrap {
+   position: relative;
+   height: 100%;
+   max-width: 570px;
+   
+   .circle-wrap {
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      right: 0;
+      @media (min-width: 360px) {
+         top: 20px;
+         width: 235px;
+         height: 235px;
+      }
+      @media (min-width: 460px) {
+         width: 285px;
+         height: 285px;
+      }
+   }
+}
+.section-home__avatar-img {
+   position: absolute;
+   height: auto;
+   width: 450px;
+   max-width: none;
+   max-height: none;
+   right: 64px;
+   top: 10px;
+   @media (min-width: 360px) {
+      top: 48px;
+      right: 70px;
+   }
+   @media (min-width: 460px) {
+      right: 125px;
+      top: 94px;
+   }
+}
+
+.section-home__content {
+   position: absolute;
+   bottom: 60px;
+   right: 0;
+   max-width: 201px;
+   
+   @media (min-width: 760px) {
+      bottom: 90px;
+   }
+   @media (min-width: $desktop-width) {
+      max-width: 280px;
+   }
+
+   p {
+      font-size: 14px;
+      // margin-top: 0;
+      // margin-bottom: 0;
+   }
+}
+.section-home__title {
+   color: $gold;
+   margin-bottom: 0;
+   font-size: 22px;
+}
+
+@media (min-width: 760px) and (min-height: 800px)  {
+   .avatar-circle-wrap {
+      max-width: 100%;
+      
+      .circle-wrap {
+         width: 360px;
+         height: 360px;
+      }
+   }
+   .section-home__avatar-img {
+      width: 700px;
+      right: 140px;
+   }
+}
+
+// // only pc
+@media (min-width: $desktop-width) {
+   .avatar-circle-wrap {
+      max-width: 800px;
+
+      .circle-wrap {
+         width: 360px;
+         height: 360px;
+      }
+   }
+   .section-home__avatar-img {
+      width: 580px;
+      right: 150px;
+   }
+}
+
+@media (min-width: 1100px) and (min-height: 800px) {
+   .avatar-circle-wrap {
+      // max-width: 800px;
+
+      .circle-wrap {
+         width: 400px;
+         height: 400px;
+      }
+   }
+   .section-home__avatar-img {
+      width: 640px;
+      right: 200px;
+   }
+}
+
+@media (min-width: 1200px) {
+   .section-home__content {
+      right: 50px;
+   }
+}
+@media (min-width: 1300px) {
+   .avatar-circle-wrap {
+      max-width: 880px;
+   }
+   .section-home__content {
+      right: 100px;
+   }
+}
+
+/// 1400px
+@media (min-width: 1400px) and (min-height: 899px) {
+
+   .avatar-circle-wrap {
+      max-width: 1112px;
+
+      .circle-wrap {
+         width: 500px;
+         height: 500px;
+      }
+   }
+   .section-home__avatar-img {
+      width: 800px;
+      top: 120px;
+      right: 260px;
+   }
+
+}
+// // мой монитор 1365-768
+
+.section-home-activ {
+   .site-header {
+      background: transparent;
+   }
+}
+.burger-menu-open {
+   .site-header {
+      background: #fff;
+   }
+}
+
+
+.section-home-inner {
+   border: 1px solid red;
+   min-height: calc(100vh - 60px);
+   // max-width: calc(100vw - 15px);
+   width: calc(100vw - 15px);
+   position: relative; // наверно перенести в основной section-inner !!!
+   // max-width: calc(100vw - 30px); // тогда внутренний wrap -15px
+
+   @media (min-width: 660px) {
+      // max-width: calc(100vw - 75px);
+      width: calc(100vw - 75px);
+   }
+   // @media (min-width: 760px) {
+   //    max-width: calc(100vw - 30px);
+   // }
+   @media (min-width: $desktop-width) {
+      // max-width: calc(100vw - 80px);
+      width: calc(100vw - 80px);
+      overflow: hidden;
+   }
+   @media (min-width: 1200px) {
+      // max-width: 1400px; // 1112 + 280
+      max-width: 1360px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+.avatar-circle-wrap {
+   max-height: 100%;
+}
+
+// min height
+@media (min-height: 760px) {
+   .section-home__content {
+      bottom: 90px;
+   }
+}
+@media (min-height: 900px) {
+   .section-home__content {
+      bottom: 120px;
+   }
+}
