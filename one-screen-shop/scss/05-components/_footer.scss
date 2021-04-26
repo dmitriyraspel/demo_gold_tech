@@ -1,0 +1,25 @@
+.site-footer {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   background-color: $background-dark;
+   color: #fff;
+   font-size: 14px;
+   transition: $base-transition;
+   border-radius: 20px 20px 0px 0px;
+   z-index: 10;
+   @media (max-width: $desktop-width) {
+      display: none;
+   }
+
+   .footer-inner {
+      @include container;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+   }
+
+}

@@ -1,0 +1,24 @@
+html{
+	box-sizing: border-box;
+	background-color: $background;
+   width: 100%;
+   height: 100%;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+img {
+   max-width: 100%;
+}
+
+.site {
+   width: 100vw;
+   height: 100%;
+   position: relative;
+}
+
+.container {
+   @include container;
+}

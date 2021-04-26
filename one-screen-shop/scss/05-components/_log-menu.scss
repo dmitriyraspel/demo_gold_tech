@@ -1,0 +1,126 @@
+.log-menu {
+   position: fixed;
+   width: 56px;
+   left: 20px;
+   top: 65px;
+   transition: $base-transition;
+   z-index: 11;
+}
+
+.log {
+   position: relative;
+   width: 100%;
+}
+.burger-menu-open .log-menu {
+   top: 155px;
+}
+
+.log:hover .log-list {
+   opacity: 1;
+   visibility: visible;
+}
+
+.log:hover .log-list__link {
+   transform: scaleY(1) scaleX(1) translateY(-16px) translateX(0px);
+}
+
+.log-action-button:hover+.log-list .log-list__item-tooltip {
+   visibility: visible;
+   opacity: 1;
+   transform: scale(1);
+   transform-origin: right center 0;
+   transition-delay: 0.3s;
+}
+
+.log-action-button {
+   position: absolute;
+   top: 0;
+   display: block;
+   width: 56px;
+   height: 56px;
+   background-color: $gold;
+   border-radius: 50%;
+   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.log-action-button-img {
+   width: 32px;
+   height: 32px;
+}
+
+.log-list {
+   position: absolute;
+   left: 8px;
+   top: 70px;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   opacity: 0;
+   visibility: hidden;
+   transition: 0.2s;
+}
+
+.log-list__item {
+   display: block;
+   text-align: center;
+   margin: 12px 0;
+}
+
+.log-list__link {
+   width: 40px;
+   height: 40px;
+   text-decoration: none;
+   background-color: #ffffff;
+   border-radius: 50%;
+   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+   transform: scaleY(0.5) scaleX(0.5) translateY(0px) translateX(0px);
+   -moz-transition: .3s;
+   -webkit-transition: .3s;
+   -o-transition: .3s;
+   transition: .3s;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.log-list__link-img {
+   width: 24px;
+   height: 24px;
+}
+
+.log-list__item-tooltip {
+   top: 50%;
+   margin-top: -11px;
+   font-weight: 600;
+   border-radius: 2px;
+   background: #585858;
+   color: #fff;
+   font-size: 12px;
+   text-decoration: none;
+   visibility: hidden;
+   opacity: 0;
+   padding: 4px 7px;
+   margin-left: 12px;
+   position: absolute;
+   transform: scale(0);
+   left: 100%;
+   white-space: nowrap;
+   transform-origin: top left;
+   transition: all .3s cubic-bezier(.25, .8, .25, 1);
+}
+.log-list__link:hover > span.log-list__item-tooltip {
+   visibility: visible;
+   opacity: 1;
+   transform: scale(1);
+   transform-origin: right center 0;
+}
+
+@media (max-width: $desktop-width) {
+   .log-menu {
+      display: none;
+   }
+}

@@ -1,0 +1,37 @@
+// Colors
+$primary: #A81111;
+$gold: #c19e6d; // rgba(193, 158, 109, 1)
+$primary-dark: darken($primary,8%);
+$text: #666;
+$text-dark: #333;
+$background: #ffffff;
+$background-alt: #f7f7f7;
+$background-dark: #242633;
+$line: #eee;
+$error: tomato;
+
+// Typography
+$font-base: 'Roboto', sans-serif; // 100+400+700
+// $font-cera: CeraPro;
+// $font: 'Literata', serif;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+$font-light: 100;
+$font-normal: 400;
+$font-bold: 700;
+
+$color__burger: $background-dark;
+
+
+// Containers
+$containerWidth: 90%; // Percentage of screen width
+$containerMax: 1100px; // Largest fixed width
+$text-container: 640px; // Limit texts for readability
+$min-container: 800px;
+
+// Media queries
+$tablet-width: 600px !default; // Tablets
+$desktop-width: 1023px !default; // Desktops & Laptops
+$huge-width: 1400px !default; // Large Desktops
+
+$base-transition: all 0.4s linear;
