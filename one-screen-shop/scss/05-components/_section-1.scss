@@ -6,14 +6,13 @@
 //////////////
 .section-1 {
    background: #fff;
-   @media (min-width: $desktop-width) {
-      padding-right: 80px; //          перенести в основную секцию и убрать в section-home
+}
+.section-1-inner {
+   @media (min-width: $desktop-width) and (max-width: 1200px) {
+      padding-right: 80px;
    }
 }
 
-.section-1-inner {
-   padding-top: 80px;
-}
 .section-1__items-wrap {
    display: flex;
    flex-wrap: wrap;

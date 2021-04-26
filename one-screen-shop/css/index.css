@@ -1096,7 +1096,7 @@ body.section-5-activ #menu__link-5 .menu__link-img {
 .section-inner {
   width: 100%;
   height: 100%;
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 60px;
   overflow-y: auto;
 }
@@ -1548,6 +1548,7 @@ body.section-5-activ .section-5 {
 }
 
 .section-home-inner {
+  padding-top: 60px;
   min-height: calc(100vh - 60px);
   width: calc(100vw - 15px);
   position: relative;
@@ -1594,14 +1595,10 @@ body.section-5-activ .section-5 {
   background: #fff;
 }
 
-@media (min-width: 1023px) {
-  .section-1 {
+@media (min-width: 1023px) and (max-width: 1200px) {
+  .section-1-inner {
     padding-right: 80px;
   }
-}
-
-.section-1-inner {
-  padding-top: 80px;
 }
 
 .section-1__items-wrap {
@@ -1770,10 +1767,6 @@ body.section-5-activ .section-5 {
 
 .section-2 h1, .section-2 h2, .section-2 h3, .section-2 h4, .section-2 h5, .section-2 h6 {
   color: #fff;
-}
-
-.section-2-inner {
-  padding-top: 80px;
 }
 
 .section-2__text {
