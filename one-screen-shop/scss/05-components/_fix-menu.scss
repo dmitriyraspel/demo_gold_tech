@@ -73,6 +73,9 @@
    transform: scaleX(0.3);
    opacity: 0;
 }
+body._touch .menu__link-tooltip_pc {
+   display: none;
+}
 
 // // small screen
 @media (max-width: $desktop-width) {
