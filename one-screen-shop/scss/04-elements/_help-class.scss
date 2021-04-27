@@ -26,3 +26,13 @@
 .color-white {
    color: #fff;
 }
+
+.only-bg-gold {
+   display: none;
+}
+.bg-gold .only-bg-gold {
+   display: block;
+}
+.bg-gold .no-bg-gold {
+   display: none;
+}

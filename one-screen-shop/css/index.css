@@ -586,13 +586,6 @@ a {
   max-height: 40px;
 }
 
-@media (min-width: 1023px) {
-  .site-header .site-logo,
-  .site-header .qr-code {
-    max-height: 60px;
-  }
-}
-
 .site-header-inner {
   width: calc(100vw - 30px);
   max-width: 1100px;
@@ -1756,6 +1749,14 @@ body.section-5-activ .section-5 {
   background: #c19e6d;
 }
 
+.section-2-activ .no-bg-gold {
+  display: none;
+}
+
+.section-2-activ .only-bg-gold {
+  display: block;
+}
+
 .section-2 {
   background: #c19e6d;
   color: #fff;
@@ -1939,4 +1940,16 @@ body.section-5-activ .section-5 {
 
 .color-white {
   color: #fff;
+}
+
+.only-bg-gold {
+  display: none;
+}
+
+.bg-gold .only-bg-gold {
+  display: block;
+}
+
+.bg-gold .no-bg-gold {
+  display: none;
 }
