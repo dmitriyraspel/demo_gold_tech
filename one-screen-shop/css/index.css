@@ -580,9 +580,17 @@ a {
   background: #fff;
 }
 
+.site-header img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .site-header .site-logo,
 .site-header .qr-code {
   width: auto;
+  max-width: 100%;
   max-height: 40px;
 }
 
@@ -608,6 +616,22 @@ a {
   .site-header-inner {
     width: calc(100vw - 60px);
   }
+}
+
+.site-header-left {
+  max-width: calc((100vw - 30px) - 80px);
+}
+
+.site-header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 /* 

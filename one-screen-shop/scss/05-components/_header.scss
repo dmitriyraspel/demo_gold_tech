@@ -9,6 +9,8 @@
    background: #fff;
 
    // img {
+   //    width: auto;
+   //    height: auto;
    //    max-width: 100%;
    //    max-height: 100%
    // }
@@ -16,6 +18,7 @@
    .site-logo,
    .qr-code {
       width: auto;
+      max-width: 100%;
       max-height: 40px;
    }
 }
@@ -30,6 +33,15 @@
    position: relative;
 }
 
+.site-header-left {
+   max-width: calc((100vw - 30px) - 80px);
+}
+.site-header-right {
+   display: flex;
+   align-items: center;
+   justify-content: end;
+}
+
 // @keyframes header-slide {
 //    0% {
 //       transform: translateX(0%);
@@ -41,5 +53,3 @@
 //       transform: translateX(0%);
 //    }
 // }
-
-
