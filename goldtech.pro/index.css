@@ -860,10 +860,6 @@ body.section-5-activ #menu__link-5 .menu__link-img {
   width: 100%;
 }
 
-.burger-menu-open .log-menu {
-  top: 155px;
-}
-
 .log:hover .log-list {
   opacity: 1;
   visibility: visible;
