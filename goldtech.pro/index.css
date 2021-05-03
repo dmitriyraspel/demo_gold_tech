@@ -1023,6 +1023,10 @@ body.section-5-activ #menu__link-5 .menu__link-img {
   outline: none;
 }
 
+.social-menu .ml-24 {
+  margin-left: 24px;
+}
+
 .social-icon {
   width: 25px;
   height: 25px;
@@ -1058,9 +1062,11 @@ body.section-5-activ #menu__link-5 .menu__link-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1073,9 +1079,45 @@ body.section-5-activ #menu__link-5 .menu__link-img {
   }
 }
 
+@media (min-width: 760px) {
+  .site-footer .footer-inner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.site-footer .left,
+.site-footer .center,
+.site-footer .right {
+  margin-top: 8px;
+}
+
+.site-footer .left {
+  margin-right: 16px;
+}
+
+.site-footer .right {
+  margin-left: 16px;
+}
+
+.site-footer .copyright {
+  color: #fff;
+}
+
+.site-footer .copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .site-footer .privacy {
   font-size: 12px;
-  color: #c19e6d;
+  color: #666;
+}
+
+.site-footer .privacy a {
+  text-decoration: none;
+  margin-top: 1em;
 }
 
 /* добавить только при Body._PC */
