@@ -27,7 +27,7 @@
    outline: none;
    border: none;
    // width: 20%;
-   flex-basis: 20%;
+   flex-basis: 16.6%;
    flex-grow: 1;
    flex-shrink: 0;
    position: relative;
@@ -104,8 +104,10 @@ body._touch .menu__link-tooltip_pc {
    }
    .menu__link-img,
    .menu__link-img img {
-      width: 42px;
-      height: 42px;
+      // width: 42px;
+      // height: 42px;
+      width: 36px;
+      height: 36px;
    }
    .menu__link-tooltip_pc {
       display: block;

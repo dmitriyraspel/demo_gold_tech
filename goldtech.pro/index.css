@@ -700,8 +700,8 @@ a {
   text-decoration: none;
   outline: none;
   border: none;
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
+  -ms-flex-preferred-size: 16.6%;
+      flex-basis: 16.6%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -798,8 +798,8 @@ body._touch .menu__link-tooltip_pc {
   }
   .menu__link-img,
   .menu__link-img img {
-    width: 42px;
-    height: 42px;
+    width: 36px;
+    height: 36px;
   }
   .menu__link-tooltip_pc {
     display: block;
