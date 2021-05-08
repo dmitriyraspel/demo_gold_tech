@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="shop1.css?12">
+</head>
+
+<body>
+   <div class="master-wrapper-page">
+      <!-- /////////////////////// -->
+      <header class="site-header">
+
+         <div class=exchange>
+            <div class=container>
+               <div class=exchange__body>
+                  <div class=exchange__marquee style=overflow-wrap:normal;white-space:nowrap;overflow:hidden>
+                     <div class=exchange-line><span class=exchange__title> Биржевые индексы: </span>
+                        <ul class=exchange__list>
+                           <li class=exchange__item>Золото: <span class=exchange__val id=gold-span_1>--</span> <span
+                                 class="exchange__item-arrow exchange__item-arrow-gold" id=gold-span-arrow-1></span>
+                           <li class=exchange__item>Серебро: <span class=exchange__val id=silver-span_1>--</span>
+                              <span class="exchange__item-arrow exchange__item-arrow-silver"
+                                 id=silver-span-arrow-1></span>
+                           <li class=exchange__item>Платина: <span class=exchange__val id=platinum-span_1>--</span>
+                              <span class="exchange__item-arrow exchange__item-arrow-platinum"
+                                 id=platinum-span-arrow-1></span>
+                           <li class=exchange__item>Доллар: <span class=exchange__val id=usd-span_1>--</span> <span
+                                 class="exchange__item-arrow exchange__item-arrow-usd" id=usd-span-arrow-1></span>
+                           <li class=exchange__item>Евро: <span class=exchange__val id=eur-span_1>--</span> <span
+                                 class="exchange__item-arrow exchange__item-arrow-eur" id=eur-span-arrow-1></span>
+                        </ul>
+                     </div>
+                     <div class=exchange-line><span class=exchange__title> Биржевые индексы: </span>
+                        <ul class=exchange__list>
+                           <li class=exchange__item>Золото: <span class=exchange__val id=gold-span_2>--</span> <span
+                                 class="exchange__item-arrow exchange__item-arrow-gold" id=gold-span-arrow-2></span>
+                           <li class=exchange__item>Серебро: <span class=exchange__val id=silver-span_2>--</span>
+                              <span class="exchange__item-arrow exchange__item-arrow-silver"
+                                 id=silver-span-arrow-2></span>
+                           <li class=exchange__item>Платина: <span class=exchange__val id=platinum-span_2>--</span>
+                              <span class="exchange__item-arrow exchange__item-arrow-platinum"
+                                 id=platinum-span-arrow-2></span>
+                           <li class=exchange__item>Доллар: <span class=exchange__val id=usd-span_2>--</span> <span
+                                 class="exchange__item-arrow exchange__item-arrow-usd" id=usd-span-arrow-2></span>
+                           <li class=exchange__item>Евро: <span class=exchange__val id=eur-span_2>--</span> <span
+                                 class="exchange__item-arrow exchange__item-arrow-eur" id=eur-span-arrow-2></span>
+                        </ul>
+                     </div>
+                     <div class=exchange-line><span class=exchange__title> Биржевые индексы: </span>
+                        <ul class=exchange__list>
+                           <li class=exchange__item>Золото: <span class=exchange__val id=gold-span_3>--</span> <span
+                                 class="exchange__item-arrow exchange__item-arrow-gold" id=gold-span-arrow-3></span>
+                           <li class=exchange__item>Серебро: <span class=exchange__val id=silver-span_3>--</span>
+                              <span class="exchange__item-arrow exchange__item-arrow-silver"
+                                 id=silver-span-arrow-3></span>
+                           <li class=exchange__item>Платина: <span class=exchange__val id=platinum-span_3>--</span>
+                              <span class="exchange__item-arrow exchange__item-arrow-platinum"
+                                 id=platinum-span-arrow-3></span>
+                           <li class=exchange__item>Доллар: <span class=exchange__val id=usd-span_3>--</span> <span
+                                 class="exchange__item-arrow exchange__item-arrow-usd" id=usd-span-arrow-3></span>
+                           <li class=exchange__item>Евро: <span class=exchange__val id=eur-span_3>--</span> <span
+                                 class="exchange__item-arrow exchange__item-arrow-eur" id=eur-span-arrow-3></span>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="header-upper">
+
+            <div class="header-selectors-wrapper">
+               <div class="currency-selector">
+                  <select id="customerCurrency" name="customerCurrency" onchange="setLocation(this.value)"
+                     aria-label="Выбор валюты">
+                     <option selected="" value="https://goldtech.market/changecurrency/9?returnUrl=%2Fshop">
+                        Russian Rouble</option>
+                     <option value="https://goldtech.market/changecurrency/1?returnUrl=%2Fshop">US Dollar</option>
+                     <option value="https://goldtech.market/changecurrency/6?returnUrl=%2Fshop">Euro</option>
+                  </select>
+               </div>
+               <div class="language-selector">
+                  <select id="customerlanguage" name="customerlanguage" onchange="setLocation(this.value)"
+                     aria-label="Выбор языка">
+                     <option selected="" value="https://goldtech.market/changelanguage/2?returnUrl=%2Fshop">
+                        Russian
+                     </option>
+                     <option value="https://goldtech.market/changelanguage/1?returnUrl=%2Fshop">English</option>
+                  </select>
+               </div>
+            </div>
+            <div class="header-links-wrapper">
+               <div class="header-links">
+                  <ul>
+                     <li>
+                        <a href="/customer/info" class="ico-account">
+                           <span class="account-label">Личный кабинет</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="/wishlist" class="ico-wishlist">
+                           <span class="wishlist-label">Список пожеланий</span>
+                           <span class="wishlist-qty">(1)</span>
+                        </a>
+                     </li>
+                     <li id="topcartlink"><a href="/cart" class="ico-cart">
+                           <span class="cart-label">Корзина</span>
+                           <span class="cart-qty">(0)</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div id="flyout-cart" class="flyout-cart">
+                  <div class="mini-shopping-cart">
+                     <div class="count">Ваша корзина пуста.</div>
+                  </div>
+               </div>
+            </div>
+         </div><!-- /.header-upper -->
+
+         <div class="header-search-wrapper">
+            <form method="get" id="small-search-box-form" action="/search"><input type="text"
+                  class="search-box-text ui-autocomplete-input" id="small-searchterms" autocomplete="off" name="q"
+                  placeholder="Поиск по магазину" aria-label="Поиск по магазину"> <input type="submit"
+                  class="button-1 search-box-button" value="Поиск"></form>
+            <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front"
+               style="top: 140px; left: 49.7656px; width: 281px; display: none;">
+               <li class="ui-menu-item"><a id="ui-id-16" tabindex="-1" class="ui-menu-item-wrapper"><span>золотая монета
+                        "Венская Филармония" 1989г.в. 1/4 унции</span></a></li>
+               <li class="ui-menu-item"><a id="ui-id-17" tabindex="-1" class="ui-menu-item-wrapper"><span>золотая монета
+                        "Лунар III - Год Быка" 2021 г.в. 1 унция</span></a></li>
+               <li class="ui-menu-item"><a id="ui-id-18" tabindex="-1" class="ui-menu-item-wrapper"><span>золотая монета
+                        "Британия" 2020г.в. 1 унция</span></a></li>
+               <li class="ui-menu-item"><a id="ui-id-19" tabindex="-1" class="ui-menu-item-wrapper"><span>золотая монета
+                        "Британия" 2021г.в. 1 унция</span></a></li>
+               <li class="ui-menu-item"><a id="ui-id-20" tabindex="-1" class="ui-menu-item-wrapper"><span>золотая монета
+                        "Кленовый Лист" 1 унция</span></a></li>
+               <li class="ui-menu-item"><a id="ui-id-21" tabindex="-1" class="ui-menu-item-wrapper"><span>золотая монета
+                        "Наггет Кенгуру" 2021г.в. 1 унция</span></a></li>
+               <li class="ui-menu-item"><a id="ui-id-22" tabindex="-1" class="ui-menu-item-wrapper"><span>золотая монета
+                        Камеруна "Шахматы" 2019г.в. 1 унция</span></a></li>
+            </ul>
+
+         </div><!-- /.header-search-wrapper -->
+
+         <div class="site-header-inner">
+            <div class="site-header-left">
+               <div class="header-logo">
+                  <a href="/">
+                     <img alt="GoldTech Market" src="img/GT_Market_logo.png">
+                  </a>
+               </div>
+            </div>
+
+            <div class="site-header-right">
+
+               <button id="search-toggle" class="search-toggle toggle-aria-control"
+                  aria-controls="header-search">search</button>
+               <!-- onchange="setLocation(this.value)" -->
+               <button id="burger-menu-toggle" class="burger-menu-button toggle-aria-control"
+                  aria-controls="burger-menu" aria-expanded="false">
+                  <div class="burger">
+                     <div class="burger__inner">
+                     </div>
+                  </div>
+               </button>
+            </div><!-- /.site-header-right -->
+
+         </div><!-- /.site-header-inner -->
+      </header>
+
+      <div class="header-menu"><ul class="top-menu notmobile"><li><a href="/zolotye-monety">Золотые монеты </a></li><li><a href="/serebryanye-monety">Серебряные монеты </a></li><li><a href="/aksessuary">Аксессуары </a></li><li><a href="/zakazat-svoyu-monetu">Заказать свою монету </a></li><li><a href="/dostavka-i-oplata">Доставка и Оплата</a></li></ul><ul class="top-menu mobile"><li><a href="/zolotye-monety">Золотые монеты </a></li><li><a href="/serebryanye-monety">Серебряные монеты </a></li><li><a href="/aksessuary">Аксессуары </a></li><li><a href="/zakazat-svoyu-monetu">Заказать свою монету </a></li><li><a href="/dostavka-i-oplata">Доставка и Оплата</a></li></ul></div>
+
+
+
+
+      <div class="master-wrapper-content">
+         <div class="master-column-wrapper">
+            <div class="center-1">
+               <div class="page home-page">
+                  <div class="page-body">
+
+                     <div class="topic-block">
+                        <div class="topic-block-title">
+                           <h2>Рады вас приветствовать на площадке Gold Tech</h2>
+                        </div>
+                        <div class="topic-block-body"></div>
+                     </div>
+                     <div class="news-list-homepage">
+                        <div class="title"><strong>Новости</strong></div>
+                        <div class="news-items">
+                           <div class="news-item">
+                              <div class="news-head"><a class="news-title" href="/kursy-monet-nashih-parnyorov">Курсы
+                                    монет наших парнёров</a> <span class="news-date">-14 марта 2021 г.</span></div>
+                              <div class="news-body">На главной странице нашего магазина появились текущие цены золотых
+                                 монет Георгий Победоносец Московского Монетного Двора и Георгий Победоносец
+                                 Санкт-петербургского монетного двора.</div>
+                              <div class="buttons"><a href="/kursy-monet-nashih-parnyorov"
+                                    class="read-more">подробнее</a></div>
+                           </div>
+                           <div class="news-item">
+                              <div class="news-head"><a class="news-title"
+                                    href="/integraciya-s-mezhdunarodnym-servisom-dostavki-dpd">Интеграция с
+                                    международным сервисом доставки DPD</a> <span class="news-date">-7 февраля 2021
+                                    г.</span></div>
+                              <div class="news-body">Выполнена интеграция с международным сервисом доставки DPD -
+                                 https://www.dpd.ru/. Доставку можно организовать до пункта самовывоза и курьером лично
+                                 в руки.</div>
+                              <div class="buttons"><a href="/integraciya-s-mezhdunarodnym-servisom-dostavki-dpd"
+                                    class="read-more">подробнее</a></div>
+                           </div>
+                           <div class="news-item">
+                              <div class="news-head"><a class="news-title" href="/about-nopcommerce">Открытие Gold
+                                    Tech</a> <span class="news-date">-1 декабря 2020 г.</span></div>
+                              <div class="news-body">Мы открылись. Офис в г. Москва, Москва-Сити, Башня Федерация</div>
+                              <div class="buttons"><a href="/about-nopcommerce" class="read-more">подробнее</a></div>
+                           </div>
+                        </div>
+                        <div class="view-all"><a href="/news">Посмотреть все новости</a></div>
+                     </div>
+                  </div>
+               </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque at, iusto illo distinctio ipsa
+                  sint soluta eum error ducimus numquam cum officiis necessitatibus beatae porro placeat in labore amet?
+                  Voluptatem earum dolor temporibus accusamus non omnis mollitia ab, ut nisi ipsum, inventore placeat
+                  nihil cumque odit atque aliquid! Sit voluptate eos explicabo sapiente ipsum odit numquam, aliquid
+                  vitae a.
+                  Asperiores laborum doloremque, cumque dolores eos, magnam aliquam architecto quibusdam perspiciatis
+                  natus, dicta alias quae repudiandae dignissimos. Eaque eligendi consequuntur inventore iusto ut
+                  molestiae nulla eum reiciendis? Ipsa, facere officiis!
+                  Quos illo cum animi maxime dolorem ullam officia itaque dolores? Voluptate repellat aliquam omnis
+                  itaque facere minus alias maxime rerum hic voluptates exercitationem dolores nihil, molestiae magni
+                  qui doloremque. Unde?
+                  Eos ut adipisci commodi! Inventore, rerum? Quisquam facilis maiores quaerat nesciunt fuga qui quas
+                  animi id? Aliquid rem, explicabo vel ullam facilis tempora eveniet eum maiores repellendus
+                  accusantium, molestias enim?</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam recusandae aperiam. Fuga harum
+                  obcaecati et officiis inventore non expedita enim perferendis. Dolorum distinctio accusantium ipsa
+                  quae, illo molestiae fugiat.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste neque at, iusto illo distinctio ipsa
+                  sint soluta eum error ducimus numquam cum officiis necessitatibus beatae porro placeat in labore amet?
+                  Voluptatem earum dolor temporibus accusamus non omnis mollitia ab, ut nisi ipsum, inventore placeat
+                  nihil cumque odit atque aliquid! Sit voluptate eos explicabo sapiente ipsum odit numquam, aliquid
+                  vitae a.
+                  Asperiores laborum doloremque, cumque dolores eos, magnam aliquam architecto quibusdam perspiciatis
+                  natus, dicta alias quae repudiandae dignissimos. Eaque eligendi consequuntur inventore iusto ut
+                  molestiae nulla eum reiciendis? Ipsa, facere officiis!
+                  Quos illo cum animi maxime dolorem ullam officia itaque dolores? Voluptate repellat aliquam omnis
+                  itaque facere minus alias maxime rerum hic voluptates exercitationem dolores nihil, molestiae magni
+                  qui doloremque. Unde?
+                  Eos ut adipisci commodi! Inventore, rerum? Quisquam facilis maiores quaerat nesciunt fuga qui quas
+                  animi id? Aliquid rem, explicabo vel ullam facilis tempora eveniet eum maiores repellendus
+                  accusantium, molestias enim?</p>
+            </div>
+         </div>
+      </div><!-- /.master-wrapper-content -->
+
+   </div>
+   <!-- /.master-wrapper-page -->
+<script>
+function burgerNav() {
+   var body = document.body;
+   var burgerButton = document.querySelector('#burger-menu-toggle');
+   var siteNavigation = document.querySelector('#burger-menu');
+
+   burgerButton.addEventListener('click', function () {
+      if (burgerButton.getAttribute('aria-expanded') === 'true') {
+         body.classList.remove('burger-menu-open');
+         burgerButton.setAttribute('aria-expanded', 'false');
+      } else {
+         burgerButton.setAttribute('aria-expanded', 'true');
+         body.classList.add('burger-menu-open');
+      }
+   });
+
+}
+
+function searchBoxOpen() {
+   var body = document.body;
+   var searchButton = document.querySelector('#search-toggle');
+   var searchBox = document.querySelector('.header-search-wrapper');
+
+   searchButton.addEventListener('click', function () {
+      if (searchButton.getAttribute('aria-expanded') === 'true') {
+         body.classList.remove('header-search-open');
+         searchButton.setAttribute('aria-expanded', 'false');
+      } else {
+         searchButton.setAttribute('aria-expanded', 'true');
+         body.classList.add('header-search-open');
+      }
+   });
+}
+
+burgerNav();
+searchBoxOpen();
+</script>
+</body>
+
+</html>
