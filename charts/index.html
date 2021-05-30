@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+   <!-- <script src="old-index.js"></script> -->
+
+   <script>
+      function drawChart() {
+
+         var graficData = [];
+
+         $.get("https://web-api.online/api/Currencies/CoinRatesByAcronim?acronim=gps",
+            function (data) {
+               // graficData = data;
+
+               function coinChartDateFormat(str) {
+                  var date = new Date(str);
+                  var month = date.getMonth() + 1;
+                  var day = date.getDate();
+                  var year = date.getYear();
+                  if (month < 10) month = "0" + month;
+                  if (day < 10) day = "0" + day;
+
+                  return day + "." + month;
+               }
+
+               // var newResult = graficData.map(item => `${item.date} ${item.sell} ${item.sell}`);
+
+               for (var k in data) {
+                  var element = [];
+                  if (data[k].site == "https://www.ricgold.com/") {
+                  element.push(coinChartDateFormat(data[k].date));
+                  element.push(data[k].sell);
+                  element.push(data[k].buy);
+
+                  graficData.push(element);
+                  }
+               }
+
+               
+
+               var data = new google.visualization.DataTable();
+               data.addColumn('string', 'Дата');
+               data.addColumn('number', 'Продажа');
+               data.addColumn('number', 'Покупка');
+
+               data.addRows(graficData);
+
+               var options = {
+                  chart: {
+                     title: '"Георгий Победоносец" 2018-2020г.в (ММД)',
+                  },
+                  width: 900,
+                  height: 500
+               };
+
+               var chart = new google.charts.Line(document.getElementById('linechart_material'));
+
+               chart.draw(data, google.charts.Line.convertOptions(options));
+
+            });
+
+
+
+      }
+
+      $(document).ready(function () {
+
+         google.charts.load('current', {
+            'packages': ['line']
+         });
+         google.charts.setOnLoadCallback(drawChart);
+
+
+
+         // var getAll = $.ajax({
+         // type: 'GET',
+         // url: 'https://web-api.online/api/Currencies/CoinRatesByAcronim?acronim=gps',
+         // success: function (msg) {
+         // var result = msg.filter(x => x.site == "https://zoloto-md.ru/bullion-coins");
+
+
+      });
+   </script>
+
+   <!-- google charts -->
+
+
+
+</head>
+
+<body>
+
+   <div id="linechart_material"></div>
+
+</body>
+
+</html>
+
