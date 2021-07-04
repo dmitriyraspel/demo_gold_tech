@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product for vue-market</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="exchange">
+      <div class="container">
+        <div class="exchange__body">
+          <div class="exchange__marquee">
+            <div class="exchange-line">
+              <span class="exchange__title">
+                Биржевые индексы:
+              </span>
+              <ul class="exchange__list">
+                <li class="exchange__item">
+                  Золото: <span class="exchange__val" id="exchange-gold-1">--</span>
+                  <span class="exchange__item-arrow exchange__item-arrow-gold" id="exchange-gold-arrow-1"></span>
+                </li>
+                <li class="exchange__item">
+                  Серебро: <span class="exchange__val" id="exchange-silver-1">--</span>
+                  <span class="exchange__item-arrow exchange__item-arrow-silver" id="exchange-silver-arrow-1"></span>
+                </li>
+                <li class="exchange__item">
+                  Платина: <span class="exchange__val" id="exchange-platinum-1">--</span>
+                  <span class="exchange__item-arrow exchange__item-arrow-platinum"
+                    id="exchange-platinum-arrow-1"></span>
+                </li>
+                <li class="exchange__item">
+                  Доллар: <span class="exchange__val" id="exchange-usd-1">--</span>
+                  <span class="exchange__item-arrow exchange__item-arrow-usd" id="exchange-usd-arrow-1"></span>
+                </li>
+                <li class="exchange__item">
+                  Евро: <span class="exchange__val" id="exchange-eur-1">--</span>
+                  <span class="exchange__item-arrow exchange__item-arrow-eur" id="exchange-eur-arrow-1"></span>
+                </li>
+              </ul>
+            </div>
+            <div class="exchange-line">
+              <span class="exchange__title">
+                Биржевые индексы:
+              </span>
+              <ul class="exchange__list">
+                <li class="exchange__item">
+                  Золото: <span class="exchange__val" id="exchange-gold-2">--</span>
+                  <span class="exchange__item-arrow exchange__item-arrow-gold" id="exchange-gold-arrow-2"></span>
+                </li>
+                <li class="exchange__item">
+                  Серебро: <span class="exchange__val" id="exchange-silver-2">--</span>
+                  <span class="exchange__item-arrow exchange__item-arrow-silver" id="exchange-silver-arrow-2"></span>
+                </li>
+                <li class="exchange__item">
+                  Платина: <span class="exchange__val" id="exchange-platinum-2">--</span>
+                  <span class="exchange__item-arrow exchange__item-arrow-platinum"
+                    id="exchange-platinum-arrow-2"></span>
+                </li>
+                <li class="exchange__item">
+                  Доллар: <span class="exchange__val" id="exchange-usd-2">--</span>
+                  <span class="exchange__item-arrow exchange__item-arrow-usd" id="exchange-usd-arrow-2"></span>
+                </li>
+                <li class="exchange__item">
+                  Евро: <span class="exchange__val" id="exchange-eur-2">--</span>
+                  <span class="exchange__item-arrow exchange__item-arrow-eur" id="exchange-eur-arrow-2"></span>
+                </li>
+              </ul>
+            </div>
+            <div class="exchange-line">
+              <span class="exchange__title">
+                Биржевые индексы:
+              </span>
+              <ul class="exchange__list">
+                <li class="exchange__item">
+                  Золото: <span class="exchange__val" id="exchange-gold-3">--</span>
+                  <span class="exchange__item-arrow exchange__item-arrow-gold" id="exchange-gold-arrow-3"></span>
+                </li>
+                <li class="exchange__item">
+                  Серебро: <span class="exchange__val" id="exchange-silver-3">--</span>
+                  <span class="exchange__item-arrow exchange__item-arrow-silver" id="exchange-silver-arrow-3"></span>
+                </li>
+                <li class="exchange__item">
+                  Платина: <span class="exchange__val" id="exchange-platinum-3">--</span>
+                  <span class="exchange__item-arrow exchange__item-arrow-platinum"
+                    id="exchange-platinum-arrow-3"></span>
+                </li>
+                <li class="exchange__item">
+                  Доллар: <span class="exchange__val" id="exchange-usd-3">--</span>
+                  <span class="exchange__item-arrow exchange__item-arrow-usd" id="exchange-usd-arrow-3"></span>
+                </li>
+                <li class="exchange__item">
+                  Евро: <span class="exchange__val" id="exchange-eur-3">--</span>
+                  <span class="exchange__item-arrow exchange__item-arrow-eur" id="exchange-eur-arrow-3"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container header-inner">
+      <div class="header-logo">
+        <a href="/home.html" class="logo-link">
+          <img class="header-logo-img" src="https://dmitriyraspel.github.io/demo_gold_tech/img/GT_Market_logo.png"
+            alt="GoldTechMarket-logo">
+        </a>
+      </div>
+
+      <div class="header-inner-right">
+        <ul class="header-links">
+          <li class="not-mobile">
+            <a href="/profile.html" class="ico-account"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="fix-menu-wrap">
+    <div class="fix-menu">
+
+      <div class="fix-menu__item">
+        <a href="/catalog.html" class="fix-menu__link fix-menu__link-catalog slide-nav-toggle" aria-controls="slide-nav"
+          aria-expanded="false">
+          <span class="fix-menu__title">Каталог</span>
+        </a>
+      </div>
+
+      <div class="fix-menu__item">
+        <a href="/rates.html" class="fix-menu__link fix-menu__link-charts">
+          <span class="fix-menu__title">Статистика</span>
+        </a>
+      </div>
+
+      <div class="fix-menu__item">
+        <a href="/home.html" class="fix-menu__link fix-menu__link-home">
+          <span class="fix-menu__title">Главная</span>
+        </a>
+      </div>
+
+      <div class="fix-menu__item fix-menu__item-cart-popup">
+        <a id="fixcartlink" href="/cart.html" class="fix-menu__link fix-menu__link-cart">
+          <span class="fix-menu__title">Корзина</span>
+          <span class="cart-qty">4</span>
+        </a>
+      </div>
+
+      <div class="fix-menu__item only-mobile">
+        <a href="/profile.html" class="fix-menu__link fix-menu__link-account">
+          <span class="fix-menu__title">Профиль</span>
+        </a>
+      </div>
+
+      <div class="fix-menu__item not-mobile">
+        <a href="/examples.html" class="fix-menu__link fix-menu__link-wishlist">
+          <span class="fix-menu__title">Избранное</span>
+          <span class="wishlist-qty">3</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="cart-popup ">
+      <div class="cart-group-wrapper">
+        <div class="cart-group__header">
+          <span class="cart-group__title">Товары </span>
+          <span class="cart-group__qty">(3)</span>
+          <span class="cart-group__remove-all">Очистить список</span>
+        </div>
+        <hr>
+        <div class="cart-group">
+    
+          <div class="cart-product">
+            <div class="cart-product__img-name">
+              <div class="cart-product__img-wrapper">
+                <img src="https://goldconnect.online/images/coins/nugget-kangaroo-gold-coin-1.2oz_2021_1.png" alt=""
+                  class="cart-product__img">  
+              </div>
+              <div class="cart-product__name">
+                <div class="cart-product__code">54534534</div>
+                <a href="" class="cart-product__name-link">
+                  Nugget kangaroo gold coin 1.2oz 2021
+                </a>
+              </div>
+            </div>
+            
+            <div class="cart-product__info">
+              <div class="cart-product__qty">
+                <input class="product__qty-number" type="number" name="">
+              </div>
+              <div class="cart-product__price">
+                <span>61 768</span>
+                <span class="font-normal">₽</span>
+              </div>
+              <div class="cart-product__delete">
+                <a href="" class="btn-icon btn-icon__delete"></a>
+              </div>
+            </div>
+          </div> <!-- cart-product -->
+
+          <div class="cart-product">
+            <div class="cart-product__img-name">
+              <div class="cart-product__img-wrapper">
+                <img src="https://goldconnect.online/images/coins/nugget-kangaroo-gold-coin-1.2oz_2021_2.png" alt=""
+                  class="cart-product__img">  
+              </div>
+              <div class="cart-product__name">
+                <div class="cart-product__code">54534534</div>
+                <a href="" class="cart-product__name-link">
+                  Kangaroo Nugget kangaroo gold coin 1.2oz 2021
+                </a>
+              </div>
+            </div>
+            
+            <div class="cart-product__info">
+              <div class="cart-product__qty">
+                <input class="product__qty-number" type="number" name="">
+              </div>
+              <div class="cart-product__price">
+                <span>161 768</span>
+                <span class="font-normal">₽</span>
+              </div>
+              <div class="cart-product__delete">
+                <a href="" class="btn-icon btn-icon__delete"></a>
+              </div>
+            </div>
+          </div> <!-- cart-product -->
+
+          <div class="cart-product">
+            <div class="cart-product__img-name">
+              <div class="cart-product__img-wrapper">
+                <img src="https://goldconnect.online/images/coins/nugget-kangaroo-gold-coin-1.2oz_2021_1.png" alt=""
+                  class="cart-product__img">  
+              </div>
+              <div class="cart-product__name">
+                <div class="cart-product__code">54534534</div>
+                <a href="" class="cart-product__name-link">
+                  Gold Kangaroo Nugget kangaroo gold coin-1.2oz_2021
+                </a>
+              </div>
+            </div>
+            <div class="cart-product__info">
+              <div class="cart-product__qty">
+                <input class="product__qty-number" type="number" name="">
+              </div>
+              <div class="cart-product__price">
+                <span>1 161 768</span>
+                <span class="font-normal">₽</span>
+              </div>
+              <div class="cart-product__delete">
+                <a href="" class="btn-icon btn-icon__delete"></a>
+              </div>
+            </div>
+          </div> <!-- cart-product -->
+
+          <div class="cart-product">
+            <div class="cart-product__img-name">
+              <div class="cart-product__img-wrapper">
+                <img src="https://goldconnect.online/images/coins/nugget-kangaroo-gold-coin-1.2oz_2021_1.png" alt=""
+                  class="cart-product__img">  
+              </div>
+              <div class="cart-product__name">
+                <div class="cart-product__code">54534534</div>
+                <a href="" class="cart-product__name-link">
+                  Gold Kangaroo Nugget kangaroo gold coin-1.2oz_2021
+                </a>
+              </div>
+            </div>
+            <div class="cart-product__info">
+              <div class="cart-product__qty">
+                <input class="product__qty-number" type="number" name="">
+              </div>
+              <div class="cart-product__price">
+                <span>2 999 888</span>
+                <span class="font-normal">₽</span>
+              </div>
+              <div class="cart-product__delete">
+                <a href="" class="btn-icon btn-icon__delete"></a>
+              </div>
+            </div>
+          </div> <!-- cart-product -->
+
+        </div>
+        <!-- cart-group -->
+      </div><!-- /.cart-group-wrapper -->
+
+      
+        <div class="cart-popup__footer">
+          <div class="cart-summary">
+            <span>Итого:</span>
+            <div class="cart-summary__value">2 137 560 ₽</div>
+          </div>
+          <hr>
+          <div class="cart-popup__footer-buttons">
+            <a id="cart-popup__checkout" 
+              href="#" 
+              class="button"
+            >Оформить заказ</a>
+
+            <a id="cart-popup__to-cart" 
+              href="#" 
+              class="button button__primary"
+            >В корзину</a>
+          </div>
+
+        </div><!-- cart-popup__footer -->
+
+    </div>
+
+  </div><!-- fix-menu-wrap -->
+
+  <div class="page">
+    <div class="container">
+
+
+      <div class="page__main">
+        <div class="breadcrumbs">
+          <ul>
+            <li>
+              <a href="/home.html">Главная</a>
+            </li>
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Золотые монеты</a>
+            </li>
+            <li>
+              <a href="#">Золотая монета 20 Франков Петух Марианна 1899-1914</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="product">
+          <div class="product__content">
+
+            <div class="product__content-left">
+              <div class="product__gallery">
+                <div class="product__image-main">
+                  <img src="https://goldconnect.online/images/coins/20_Dollar_Double_Eagle_2.png" alt="">
+                </div>
+                <div class="product__image-second">
+                  <img src="https://goldconnect.online/images/coins/20_Dollar_Double_Eagle_2.png" alt="">
+                </div>
+                <div class="product__image-second">
+                  <img src="https://goldconnect.online/images/coins/nugget-kangaroo-gold-coin-1.2oz_2021_2.png" alt="">
+                </div>
+                <div class="product__image-second">
+                  <img src="https://goldconnect.online/images/coins/20_Dollar_Double_Eagle_1.png" alt="">
+                </div>
+              </div>
+            </div><!-- product__content-left -->
+
+            <div class="product__content-right">
+              <h1 class="pruduct__title">20 долларов Сент-Годенса 1907-1933</h1>
+             
+              <div class="pruduct__stat">
+                <div class="pruduct__compare">
+                  <a href="#" class="btn-icon add-to-compare">сравнить</a>
+                </div>
+                <div class="pruduct__rating">
+                  <img src="https://goldconnect.online/images/icons/rating-temp.png" alt="">
+                </div>
+                <div class="pruduct__comments">
+                  <a href="#" class="btn-icon btn-icon__comment">отзывы</a>
+                </div>
+                <div class="pruduct__share">
+                  <a href="#" class="btn-icon btn-icon__share">Поделится</a>
+                </div>
+              </div><!-- pruduct__stat -->
+              
+              <div class="product__price">
+                <div class="product__price-sale">
+                  <span class="product__price-current">20 768 руб.</span>
+                  <span class="product__price-prev">19 890 руб.</span>
+                </div>
+                <div class="product__price-offer">
+                  <a id="product__price-offer" 
+                  href="#">
+                    <span class="product__price-offer-title">Выкупаем:</span>
+                    <br>
+                    <span class="product__price-offer-price">18 890 руб.</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product__delivery">
+                Доставка:
+              </div>
+
+              <div class="product__qty">
+                <span class="product__qty-up" >-</span>
+                <input class="product__qty-number" type="number" name="" id="product__qty-number">
+                <span class="product__qty-down" >+</span>
+              </div>
+
+              <div class="product__buttons">
+                <div class="product__wishlist">
+                  <a id="product-to-wishlist" href="#" class="btn-icon add-to-wishlist">Добавить в избранное</a>
+                </div>
+                <div class="product__add-to-cart">
+                  <a href="#"
+                  id="product-to-cart"
+                  class="add-to-cart" 
+                  >В корзину</a>
+                </div>
+              </div>
+
+            </div><!-- product__content-right -->
+
+
+
+          </div>
+        </div><!-- /.product -->
+        
+        <hr>
+
+        <div class="product__second-content">
+
+          <div class="product-description">
+            <div class="product-description-title">Описание</div>
+            <p>Спрос на золотые 20 Франков были очень популярны с момента первого выпуска в 1899 г., поэтому чеканились они в больших количествах вплоть до 1914 г.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet vel reiciendis iusto fuga ipsum quasi itaque est vero perspiciatis a aperiam nulla consequuntur nostrum optio, doloremque distinctio ut repellat minus.</p>
+            <p>Главным образом чеканка монет была направлена на инвесторов и коллекционеров. 20 Франков Петух Марианна — слитковая монета со следующими характеристиками: золото 900 пробы, содержит 5,81 г чистого золота (0,8686 тройской унции),общий вес монеты составляет 6,45 г, а диаметр — 21 мм.</p>
+            
+          </div>
+          <!-- product-description -->
+
+          <div class="product-characteristics">
+            <div class="product-characteristics-title">
+              Характеристики
+            </div>
+            <ul class="product__tabs">
+              <li class="product__tabs--country">
+                <b>Страна:</b> США
+              </li>
+              <li class="product__tabs--weight">
+                <b>Вес:</b> 30.09 г.
+              </li>
+              <li class="product__tabs--series"><b>Серия:</b>
+                <a href="#">Американский орел</a>
+              </li>
+              <li class="product__tabs--manufacturer"><b>Монетный двор:</b>
+                Монетный двор США
+              </li>
+              <li class="product__tabs--"><b>Проба:</b>
+                900/1000
+              </li>
+              <li class="product__tabs--"><b>Диаметр:</b>
+                34.00 mm
+              </li>
+              <li class="product__tabs--"><b>Толщина:</b>
+                2.41 mm
+              </li>
+              <li class="product__tabs--"><b>Номинал:</b>
+                20
+              </li>
+              <li class="product__tabs--"><b>Валюта:</b>
+                Доллар США
+              </li>
+              <li class="product__tabs--"><b>Упаковка:</b>
+                Пластиковый Саше-Пакет
+              </li>
+              <li class="product__tabs--"><b>Номер продукта:</b>
+                Пластиковый Саше-Пакет
+              </li>
+              <li class="product__tabs--details">
+                <div class="product-tabs-notification">
+                  * Изображение, вес и размер изделия может незначительно отличаться.
+                </div>
+              </li>
+              
+
+
+            </ul>
+          </div>
+          <hr>
+
+          <div class="product-tags">
+            <ul>
+              <li>
+                <h3 class="product-tags-title">Теги:</h3>
+              </li>
+              <li>
+                <a href="#">Американский орел</a>
+              </li>
+              <li>
+                <a href="#">Орел</a>
+              </li>
+              <li>
+                <a href="#">Золото</a>
+              </li>
+              <li>
+                <a href="#">Liberty</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="products-slider bestsellers">
+          <h4 class="products-slider__title">Популярные</h4>
+          <div class="products-slider__items"></div>
+        </div>
+
+        <hr>
+
+      </div>
+      <!-- page__main -->
+
+    </div>
+  </div>
+
+</body>
+
+</html>
