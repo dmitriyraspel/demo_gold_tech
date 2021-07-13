@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recovery for vue-market</title>
+    <title>Login for vue-market</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -324,39 +324,39 @@
     
             </div><!-- cart-popup__footer -->
     
-        </>
+        </div>
     
       </div><!-- fix-menu-wrap -->
 
     <div class="auth empty-layout background-dark">
-        <div class="container text-container">
+      <div class="container text-container">
 
-            <form class="auth-card" @submit.prevent="submitHandler">
-                <div class="auth__auth">
-                    <h1 class="auth__title">Восстановление доступа</h1>
-                    <p>Введите Email для востановления пароля</p>
+        <form class="auth-card" @submit.prevent="submitHandler">
+            <div class="auth__auth">
+                <h1 class="auth__title">Восстановление доступа</h1>
+                <p>Введите Email для востановления пароля</p>
 
-                    <div class="input-field">
-                        <label for="email">Email</label>
-                        <input id="email" type="text" placeholder="you@example.com">
-                        <small class="helper-text">Поле Email не должно быть пустым</small>
-                        <small class="helper-text">Введите корретный Email</small>
-                    </div>
-
-                    <div>
-                        <button class="button button__primary button-max auth-submit" type="submit">
-                            Отправить
-                        </button>
-                        <!-- У кнопки тоже надо проверку. если можно отправлять добавить class - button__accent
-                        если нельзя class - button__delete -->
-                    </div>
-                    <p class="center">
-                        Вспомнили? 
-                        <a class="bottom-dotted" href="https://dmitriyraspel.github.io/demo_gold_tech/Vue-market-examples/login.html">Войти</a>
-                    </p>
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" placeholder="you@example.com">
+                    <small class="helper-text">Поле Email не должно быть пустым</small>
+                    <small class="helper-text">Введите корретный Email</small>
                 </div>
-            </form>
-        </div>
+
+                <div>
+                    <button class="button button__primary button-max auth-submit" type="submit">
+                        Отправить
+                    </button>
+                    <!-- У кнопки тоже надо проверку. если можно отправлять добавить class - button__accent
+                    если нельзя class - button__delete -->
+                </div>
+                <p class="center">
+                    Вспомнили? 
+                    <a class="bottom-dotted" href="https://dmitriyraspel.github.io/demo_gold_tech/Vue-market-examples/login.html">Войти</a>
+                </p>
+            </div>
+        </form>
+    </div>
     </div>
 
 </body>
